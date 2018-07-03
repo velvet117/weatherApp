@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D27FC6220DA179500319020 /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D27FC6120DA179500319020 /* WeatherRequest.swift */; };
 		5D27FC6520DA19A600319020 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D27FC6420DA19A600319020 /* Configuration.swift */; };
+		5D38B25D20EC137700F4B0A2 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38B25C20EC137700F4B0A2 /* RootViewModel.swift */; };
 		5DB4599420CF10BB0093D172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4599320CF10BB0093D172 /* AppDelegate.swift */; };
 		5DB4599620CF10BC0093D172 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4599520CF10BC0093D172 /* RootViewController.swift */; };
 		5DB4599920CF10BC0093D172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB4599720CF10BC0093D172 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		5D27FC6120DA179500319020 /* WeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
 		5D27FC6420DA19A600319020 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		5D38B25C20EC137700F4B0A2 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		5DB4599020CF10BB0093D172 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB4599320CF10BB0093D172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DB4599520CF10BC0093D172 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		5D38B25B20EC136500F4B0A2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5D38B25C20EC137700F4B0A2 /* RootViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		5DB4598720CF10BB0093D172 = {
 			isa = PBXGroup;
 			children = (
@@ -84,12 +94,12 @@
 			children = (
 				5D27FC6320DA198D00319020 /* Configuration */,
 				5DB459A520CF11090093D172 /* Application Delegate */,
+				5DB459A620CF114C0093D172 /* View Controllers */,
 				5DB459B220CF1AC80093D172 /* Extensions */,
 				5DB459AA20CF14070093D172 /* Resources */,
 				5DB459A920CF13EA0093D172 /* Supporting Files */,
 				5DB459A820CF13D90093D172 /* Storyboards */,
 				5D27FC6020DA176200319020 /* Models */,
-				5DB459A620CF114C0093D172 /* View Controllers */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -114,6 +124,7 @@
 		5DB459A720CF11810093D172 /* Root View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5D38B25B20EC136500F4B0A2 /* ViewModels */,
 				5DB4599520CF10BC0093D172 /* RootViewController.swift */,
 			);
 			path = "Root View Controller";
@@ -256,6 +267,7 @@
 				5DB459AE20CF15C10093D172 /* DayViewController.swift in Sources */,
 				5D27FC6220DA179500319020 /* WeatherRequest.swift in Sources */,
 				5D27FC6520DA19A600319020 /* Configuration.swift in Sources */,
+				5D38B25D20EC137700F4B0A2 /* RootViewModel.swift in Sources */,
 				5DB459B420CF1AE40093D172 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y44Y2GF76;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y44Y2GF76;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
